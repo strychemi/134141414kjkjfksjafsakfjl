@@ -45,7 +45,7 @@ describe Weapon do
       expect { Weapon.new('DeathStar', {}) }.to raise_error(ArgumentError)
     end
 
-    
+
   end
 
 
@@ -96,7 +96,7 @@ describe Weapon do
       expect { weapon.bot = "I am NOT a robot!" }.to raise_error(ArgumentError)
     end
 
-    
+
     it 'does not raise an ArgumentError when passed a BattleBot' do
       expect { weapon.bot = bot }.to_not raise_error
     end
@@ -128,4 +128,3 @@ describe Weapon do
 
 
 end
-
