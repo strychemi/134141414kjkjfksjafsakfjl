@@ -17,10 +17,6 @@ class Weapon
   end
 
   def picked_up?
-    if @bot
-      return true
-    else
-      return false
-    end
+    @bot ? true : false
   end
 end
